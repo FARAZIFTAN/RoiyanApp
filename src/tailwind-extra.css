@@ -1,0 +1,29 @@
+import './index.css';
+
+export default function tailwindExtra() {
+  // This file is only for extra Tailwind CSS classes used by ToastProvider
+  // and for custom animation
+  return null;
+}
+
+/* Tambahkan animasi fade-in-down untuk toast */
+/* tailwindcss v3+ mendukung @layer */
+
+/* Di index.css, tambahkan: */
+/*
+@layer utilities {
+  .animate-fade-in-down {
+    animation: fade-in-down 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+*/
